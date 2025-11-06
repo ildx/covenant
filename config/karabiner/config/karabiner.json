@@ -1,0 +1,378 @@
+{
+  "profiles": [
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Hyperkey (Caps Lock to Hyper)",
+            "manipulators": [
+              {
+                "description": "Hyperkey",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Raycast Launcher",
+            "manipulators": [
+              {
+                "description": "Raycast",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Raycast'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Window Management",
+            "manipulators": [
+              {
+                "description": "Hyper+Left arrow: Left half",
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right arrow: Right half",
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Enter: Maximize",
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "return_or_enter",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right shift: Next display",
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_control",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "ignore_vendor_events": true,
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 1,
+            "vendor_id": 1014
+          },
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "apple_vendor_keyboard_key_code": "mission_control"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Personal",
+      "selected": false,
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      }
+    },
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Hyperkey (Caps Lock to Hyper)",
+            "manipulators": [
+              {
+                "description": "Hyperkey",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Raycast Launcher",
+            "manipulators": [
+              {
+                "description": "Raycast",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Raycast'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Window Management",
+            "manipulators": [
+              {
+                "description": "Hyper+Left arrow: Left half",
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right arrow: Right half",
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_shift",
+                      "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Enter: Maximize",
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "return_or_enter",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right shift: Next display",
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                      "left_control",
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "ignore_vendor_events": true,
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 1,
+            "vendor_id": 1014
+          },
+          "fn_function_keys": [
+            {
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "apple_vendor_keyboard_key_code": "mission_control"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Work",
+      "selected": true,
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      }
+    }
+  ]
+}

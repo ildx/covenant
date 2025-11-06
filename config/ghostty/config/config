@@ -1,0 +1,29 @@
+# theme
+# - rose-pine-moon
+# - rose-pine-dawn
+# - dark:catppuccin-frappe,light:catppuccin-latte
+# theme = dark:nord,light:il-nord
+# theme = dark:github-dark-default,light:gitlab-light
+theme = dark:Pnevma,light:Seoulbones Light
+
+# icon
+macos-icon = custom
+macos-custom-icon = ~/.config/ghostty/icons/ghostty-original.icns
+
+# padding
+window-padding-y = 30
+window-padding-x = 30
+# macos-titlebar-style = hidden
+
+# text
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+font-size = 15
+
+# splits
+# this is just cmd + your selected key
+keybind = super+k=goto_split:up
+keybind = super+j=goto_split:down
+keybind = super+h=goto_split:left
+keybind = super+l=goto_split:right

@@ -1,0 +1,27 @@
+# Karabiner Profiles Configuration
+# Rule files are loaded from assets/complex_modifications/
+
+[[profiles]]
+name = "Personal"
+hostname = "iivo"  # Auto-select this profile on this hostname
+selected = true    # Default if hostname doesn't match
+rules = ["shared"]
+
+[[profiles]]
+name = "Work"
+hostname = "uppis"
+selected = false
+rules = ["shared"]
+
+# Device configuration (shared across all profiles)
+[[devices]]
+ignore_vendor_events = true
+identifiers = { is_keyboard = true, product_id = 1, vendor_id = 1014 }
+fn_function_keys = [
+    { from = { key_code = "f3" }, to = [{ apple_vendor_keyboard_key_code = "mission_control" }] }
+]
+
+# Virtual HID keyboard settings
+[virtual_hid_keyboard]
+keyboard_type_v2 = "ansi"
+

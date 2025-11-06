@@ -1,0 +1,215 @@
+# Homebrew configuration
+
+[metadata]
+version = "1.0.0"
+description = "Homebrew configuration"
+
+# ============================================================================
+# CLI Tools (Formulae)
+# ============================================================================
+
+[[brew]]
+name = "bat"
+description = "Better cat with syntax highlighting"
+category = "cli"
+
+[[brew]]
+name = "eza"
+description = "Modern ls replacement"
+category = "cli"
+
+[[brew]]
+name = "fzf"
+description = "Fuzzy finder"
+category = "cli"
+
+[[brew]]
+name = "zoxide"
+description = "Smarter cd command"
+category = "cli"
+
+[[brew]]
+name = "git-delta"
+description = "Better git diff viewer"
+category = "development"
+
+[[brew]]
+name = "jq"
+description = "JSON processor"
+category = "development"
+
+[[brew]]
+name = "lazygit"
+description = "Terminal UI for git"
+category = "development"
+
+[[brew]]
+name = "docker"
+description = "Container platform"
+category = "development"
+
+[[brew]]
+name = "mise"
+description = "Runtime version manager"
+category = "development"
+
+[[brew]]
+name = "stow"
+description = "Symlink manager for dotfiles"
+category = "dotfiles"
+
+[[brew]]
+name = "zellij"
+description = "Terminal multiplexer"
+category = "shell"
+
+[[brew]]
+name = "jandedobbeleer/oh-my-posh/oh-my-posh"
+description = "Prompt theme engine"
+category = "shell"
+
+[[brew]]
+name = "mas"
+description = "Mac App Store CLI"
+category = "system"
+
+# ============================================================================
+# GUI Applications (Casks)
+# ============================================================================
+
+[[cask]]
+name = "1password"
+description = "Password manager"
+category = "security"
+
+[[cask]]
+name = "1password-cli"
+description = "1Password CLI"
+category = "security"
+
+[[cask]]
+name = "cursor"
+description = "AI code editor"
+category = "development"
+
+[[cask]]
+name = "visual-studio-code"
+description = "Code editor"
+category = "development"
+
+[[cask]]
+name = "ghostty"
+description = "Terminal emulator"
+category = "development"
+
+[[cask]]
+name = "fork"
+description = "Git client"
+category = "development"
+
+[[cask]]
+name = "tableplus"
+description = "Database client"
+category = "development"
+
+[[cask]]
+name = "yaak"
+description = "API client"
+category = "development"
+
+[[cask]]
+name = "figma"
+description = "Design tool"
+category = "design"
+
+[[cask]]
+name = "affinity"
+description = "Affinity Suite (Designer, Photo, Publisher)"
+category = "design"
+
+[[cask]]
+name = "raycast"
+description = "Spotlight replacement"
+category = "productivity"
+
+[[cask]]
+name = "rectangle"
+description = "Window manager"
+category = "productivity"
+
+[[cask]]
+name = "hazel"
+description = "Automated file organization"
+category = "productivity"
+
+[[cask]]
+name = "notion"
+description = "Note-taking and collaboration"
+category = "productivity"
+
+[[cask]]
+name = "zen"
+description = "Zen Browser"
+category = "productivity"
+
+[[cask]]
+name = "karabiner-elements"
+description = "Keyboard customizer"
+category = "system"
+
+[[cask]]
+name = "jordanbaird-ice"
+description = "Menu bar manager"
+category = "system"
+
+[[cask]]
+name = "betterdisplay"
+description = "Display management"
+category = "system"
+
+[[cask]]
+name = "aldente"
+description = "Battery charge limiter"
+category = "system"
+
+[[cask]]
+name = "backblaze"
+description = "Cloud backup service"
+category = "system"
+
+[[cask]]
+name = "slack"
+description = "Team communication"
+category = "communication"
+
+[[cask]]
+name = "zoom"
+description = "Video conferencing"
+category = "communication"
+
+[[cask]]
+name = "spotify"
+description = "Music streaming"
+category = "media"
+
+[[cask]]
+name = "font-jetbrains-mono-nerd-font"
+description = "Nerd Font for terminal"
+category = "fonts"
+
+# ============================================================================
+# Categories for UI Organization
+# ============================================================================
+
+[categories]
+cli = { display_name = "CLI", icon = "🔧", order = 1 }
+development = { display_name = "Development", icon = "💻", order = 2 }
+shell = { display_name = "Shell", icon = "🐚", order = 3 }
+security = { display_name = "Security", icon = "🔒", order = 4 }
+design = { display_name = "Design", icon = "🎨", order = 5 }
+productivity = { display_name = "Productivity", icon = "⚡", order = 6 }
+communication = { display_name = "Communication", icon = "💬", order = 7 }
+media = { display_name = "Media", icon = "🎵", order = 8 }
+system = { display_name = "System", icon = "⚙️", order = 9 }
+fonts = { display_name = "Fonts", icon = "🔤", order = 10 }
+dotfiles = { display_name = "Dotfiles", icon = "📁", order = 11 }

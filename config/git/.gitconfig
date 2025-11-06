@@ -1,0 +1,51 @@
+# ~/.gitconfig
+
+[alias]
+	undo = reset --soft HEAD^
+
+[commit]
+	template = ~/.stCommitMsg
+	gspsign = true
+
+[core]
+	excludesfile = ~/.gitignore_global
+	pager = delta
+
+[delta]
+	line-numbers = true
+
+[diff]
+	tool = fork
+
+[difftool "fork"]
+	cmd = /Applications/Fork.app/Contents/Resources/fork_cli diff \"$LOCAL\" \"$REMOTE\"
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[init]
+	defaultBranch = main
+
+[merge]
+	tool = fork
+
+[mergetool "fork"]
+	cmd = /Applications/Fork.app/Contents/Resources/fork_cli merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+
+[push]
+	autoSetupRemote = true
+	default = current
+
+[user]
+	name = Iivari Leinonen
+	email = illein.dev@gmail.com
+
+[includeIf "gitdir/i:~/Development/personal/"]
+	path = ~/.config/git/profiles/.personal
+
+[includeIf "gitdir/i:~/Development/work/"]
+	path = ~/.config/git/profiles/.uppis

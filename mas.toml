@@ -1,0 +1,23 @@
+# App Store configuration
+
+[metadata]
+version = "1.0.0"
+description = "App Store applications"
+
+# ============================================================================
+# App Store Applications
+# ============================================================================
+
+[[app]]
+name = "Amphetamine"
+id = 937984704
+description = "Keep Mac awake"
+category = "productivity"
+
+# ============================================================================
+# Categories for UI Organization
+# ============================================================================
+
+[categories]
+productivity = { display_name = "Productivity", icon = "⚡", order = 1 }
+
