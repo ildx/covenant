@@ -12,66 +12,73 @@ description = "Homebrew configuration"
 name = "bat"
 description = "Better cat with syntax highlighting"
 category = "cli"
+dependencies = []
 
 [[brew]]
 name = "eza"
 description = "Modern ls replacement"
 category = "cli"
+dependencies = []
 
 [[brew]]
 name = "fzf"
 description = "Fuzzy finder"
 category = "cli"
+dependencies = []
 
 [[brew]]
 name = "zoxide"
 description = "Smarter cd command"
 category = "cli"
+dependencies = []
 
 [[brew]]
 name = "git-delta"
 description = "Better git diff viewer"
 category = "development"
+dependencies = []
 
 [[brew]]
 name = "jq"
 description = "JSON processor"
 category = "development"
+dependencies = []
 
 [[brew]]
 name = "lazygit"
 description = "Terminal UI for git"
 category = "development"
+dependencies = []
 
 [[brew]]
 name = "docker"
 description = "Container platform"
 category = "development"
+dependencies = []
 
 [[brew]]
 name = "mise"
 description = "Runtime version manager"
 category = "development"
-
-[[brew]]
-name = "stow"
-description = "Symlink manager for dotfiles"
-category = "dotfiles"
+dependencies = []
 
 [[brew]]
 name = "zellij"
 description = "Terminal multiplexer"
 category = "shell"
+dependencies = []
 
 [[brew]]
 name = "jandedobbeleer/oh-my-posh/oh-my-posh"
 description = "Prompt theme engine"
 category = "shell"
+dependencies = []
 
 [[brew]]
 name = "mas"
 description = "Mac App Store CLI"
 category = "system"
+dependencies = []
 
 # ============================================================================
 # GUI Applications (Casks)
@@ -81,135 +88,142 @@ category = "system"
 name = "1password"
 description = "Password manager"
 category = "security"
+dependencies = []
 
 [[cask]]
 name = "1password-cli"
 description = "1Password CLI"
 category = "security"
+dependencies = ["1password"]
 
 [[cask]]
 name = "cursor"
 description = "AI code editor"
 category = "development"
+dependencies = []
 
 [[cask]]
 name = "visual-studio-code"
 description = "Code editor"
 category = "development"
+dependencies = []
 
 [[cask]]
 name = "ghostty"
 description = "Terminal emulator"
 category = "development"
+dependencies = []
 
 [[cask]]
 name = "fork"
 description = "Git client"
 category = "development"
+dependencies = []
 
 [[cask]]
 name = "tableplus"
 description = "Database client"
 category = "development"
+dependencies = []
 
 [[cask]]
 name = "yaak"
 description = "API client"
 category = "development"
+dependencies = []
 
 [[cask]]
 name = "figma"
 description = "Design tool"
 category = "design"
+dependencies = []
 
 [[cask]]
 name = "affinity"
 description = "Affinity Suite (Designer, Photo, Publisher)"
 category = "design"
+dependencies = []
 
 [[cask]]
 name = "raycast"
 description = "Spotlight replacement"
 category = "productivity"
+dependencies = []
 
 [[cask]]
 name = "rectangle"
 description = "Window manager"
 category = "productivity"
+dependencies = []
 
 [[cask]]
 name = "hazel"
 description = "Automated file organization"
 category = "productivity"
+dependencies = []
 
 [[cask]]
 name = "notion"
 description = "Note-taking and collaboration"
 category = "productivity"
+dependencies = []
 
 [[cask]]
 name = "zen"
 description = "Zen Browser"
 category = "productivity"
+dependencies = []
 
 [[cask]]
 name = "karabiner-elements"
 description = "Keyboard customizer"
 category = "system"
+dependencies = []
 
 [[cask]]
 name = "jordanbaird-ice"
 description = "Menu bar manager"
 category = "system"
+dependencies = []
 
 [[cask]]
 name = "betterdisplay"
 description = "Display management"
 category = "system"
+dependencies = []
 
 [[cask]]
 name = "aldente"
 description = "Battery charge limiter"
 category = "system"
+dependencies = []
 
 [[cask]]
 name = "backblaze"
 description = "Cloud backup service"
 category = "system"
+dependencies = []
 
 [[cask]]
 name = "slack"
 description = "Team communication"
 category = "communication"
+dependencies = []
 
 [[cask]]
 name = "zoom"
 description = "Video conferencing"
 category = "communication"
+dependencies = []
 
 [[cask]]
 name = "spotify"
 description = "Music streaming"
 category = "media"
+dependencies = []
 
 [[cask]]
 name = "font-jetbrains-mono-nerd-font"
 description = "Nerd Font for terminal"
 category = "fonts"
-
-# ============================================================================
-# Categories for UI Organization
-# ============================================================================
-
-[categories]
-cli = { display_name = "CLI", icon = "🔧", order = 1 }
-development = { display_name = "Development", icon = "💻", order = 2 }
-shell = { display_name = "Shell", icon = "🐚", order = 3 }
-security = { display_name = "Security", icon = "🔒", order = 4 }
-design = { display_name = "Design", icon = "🎨", order = 5 }
-productivity = { display_name = "Productivity", icon = "⚡", order = 6 }
-communication = { display_name = "Communication", icon = "💬", order = 7 }
-media = { display_name = "Media", icon = "🎵", order = 8 }
-system = { display_name = "System", icon = "⚙️", order = 9 }
-fonts = { display_name = "Fonts", icon = "🔤", order = 10 }
-dotfiles = { display_name = "Dotfiles", icon = "📁", order = 11 }
+dependencies = []

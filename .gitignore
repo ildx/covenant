@@ -1,0 +1,30 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Generated configs
+config/karabiner/config/automatic_backups/
+config/zellij/config/config.kdl
+
+# Backup files
+*.backup
+*.backup.*
+*.bak
+*~
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.netrwhist
+
+# Logs
+*.log
+
+# Temporary files
+.tmp
+tmp/

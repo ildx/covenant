@@ -1,0 +1,11 @@
+[tool]
+name = "git"
+description = "Git version control configuration"
+dependencies = []
+
+[[link]]
+target = "~/.config/git"
+
+[[link]]
+source = "config/.gitconfig"
+target = "~/.gitconfig"

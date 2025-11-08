@@ -1,0 +1,12 @@
+[[profiles]]
+name = "Personal"
+hostname = "iivo"
+selected = true
+rules = ["shared"]
+
+[[profiles]]
+name = "Work"
+hostname = "uppis"
+selected = false
+rules = ["shared"]
+

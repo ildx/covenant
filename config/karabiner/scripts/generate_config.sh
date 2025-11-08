@@ -1,20 +1,26 @@
 #!/bin/bash
 #
-# Karabiner Configuration Installer
+# Karabiner Configuration Generator
 #
-# This script reads profiles.toml and generates karabiner.json
-# by combining rule files from assets/complex_modifications/
+# This script reads profiles.toml for profile definitions and generates
+# karabiner.json by combining rule files from assets/complex_modifications/
+#
+# Each rule file can contain:
+# - rules: Key modification rules
+# - devices: Device-specific settings (optional, shared across profiles)
+# - virtual_hid_keyboard: Keyboard type settings (optional, shared across profiles)
 #
 # Requirements: yq, jq (brew install yq jq)
 #
 # Usage:
-#   ./install.sh
+#   ./generate_config.sh
 
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CONFIG_DIR="$SCRIPT_DIR/config"
-PROFILES_TOML="$CONFIG_DIR/profiles.toml"
+TOOL_DIR="$(dirname "$SCRIPT_DIR")"
+CONFIG_DIR="$TOOL_DIR/config"
+PROFILES_TOML="$TOOL_DIR/profiles.toml"
 RULES_DIR="$CONFIG_DIR/assets/complex_modifications"
 OUTPUT_FILE="$CONFIG_DIR/karabiner.json"
 
@@ -45,7 +51,7 @@ if ! command -v jq &> /dev/null; then
     exit 1
 fi
 
-# Read profiles from TOML
+# Read profiles from profiles.toml
 PROFILE_COUNT=$(yq eval '.profiles | length' "$PROFILES_TOML")
 
 # Start building the JSON
@@ -90,15 +96,17 @@ for ((i=0; i<PROFILE_COUNT; i++)); do
             PROFILE_SELECTED="false"
         fi
     else
-        # No hostname match - use default from YAML
+        # No hostname match - use default from TOML
         PROFILE_SELECTED=$(yq eval ".profiles[$i].selected" "$PROFILES_TOML")
     fi
     RULE_COUNT=$(yq eval ".profiles[$i].rules | length" "$PROFILES_TOML")
     
     echo "  📋 Building profile: $PROFILE_NAME"
     
-    # Collect all rules for this profile
+    # Collect all rules, devices, and virtual_hid_keyboard for this profile
     ALL_RULES="[]"
+    DEVICES="[]"
+    VHK="{}"
     
     for ((j=0; j<RULE_COUNT; j++)); do
         RULE_FILE=$(yq eval ".profiles[$i].rules[$j]" "$PROFILES_TOML")
@@ -118,11 +126,23 @@ for ((i=0; i<PROFILE_COUNT; i++)); do
         # Extract rules from the file and merge
         RULES=$(jq '.rules' "$RULE_PATH")
         ALL_RULES=$(echo "$ALL_RULES" | jq --argjson new "$RULES" '. + $new')
+        
+        # Extract devices if present (first one wins)
+        if [ "$DEVICES" == "[]" ]; then
+            FILE_DEVICES=$(jq '.devices // []' "$RULE_PATH")
+            if [ "$FILE_DEVICES" != "[]" ]; then
+                DEVICES="$FILE_DEVICES"
+            fi
+        fi
+        
+        # Extract virtual_hid_keyboard if present (first one wins)
+        if [ "$VHK" == "{}" ]; then
+            FILE_VHK=$(jq '.virtual_hid_keyboard // {}' "$RULE_PATH")
+            if [ "$FILE_VHK" != "{}" ]; then
+                VHK="$FILE_VHK"
+            fi
+        fi
     done
-    
-    # Get devices and virtual_hid_keyboard from YAML
-    DEVICES=$(yq eval '.devices' "$PROFILES_TOML" -o=json)
-    VHK=$(yq eval '.virtual_hid_keyboard' "$PROFILES_TOML" -o=json)
     
     # Build the profile JSON
     PROFILE=$(jq -n \

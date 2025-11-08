@@ -1,0 +1,7 @@
+[tool]
+name = "brew"
+description = "Homebrew shell integration"
+dependencies = []
+
+[[link]]
+target = "~/.config/brew"

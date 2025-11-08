@@ -1,8 +1,0 @@
-# ~/Development/personal/.gitconfig
-
-[credential]
-	username = ildx
-
-[user]
-    name = Iivari Leinonen
-    email =  illein.dev@gmail.com

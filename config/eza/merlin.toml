@@ -1,0 +1,7 @@
+[tool]
+name = "eza"
+description = "Modern ls replacement with icons and colors"
+dependencies = ["brew"]
+
+[[link]]
+target = "~/.config/eza"

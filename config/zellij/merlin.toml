@@ -1,0 +1,11 @@
+[tool]
+name = "zellij"
+description = "Terminal multiplexer"
+dependencies = ["brew"]
+
+[[link]]
+target = "~/.config/zellij"
+
+[scripts]
+directory = "scripts"
+scripts = ["generate_config.sh"]

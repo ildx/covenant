@@ -1,0 +1,11 @@
+[tool]
+name = "ghostty"
+description = "Terminal emulator"
+dependencies = ["brew"]
+
+[[link]]
+target = "~/.config/ghostty"
+
+[[link]]
+source = "config/themes"
+target = "/Applications/Ghostty.app/Contents/Resources/ghostty/themes"

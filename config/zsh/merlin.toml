@@ -1,0 +1,11 @@
+[tool]
+name = "zsh"
+description = "Z shell configuration"
+dependencies = []
+
+[[link]]
+source = "config/.zshrc"
+target = "~/.zshrc"
+
+[[link]]
+target = "~/.config/zsh"

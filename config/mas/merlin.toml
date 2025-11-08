@@ -1,0 +1,7 @@
+[tool]
+name = "mas"
+description = "Mac App Store CLI"
+dependencies = []
+
+[[link]]
+target = "~/.config/mas"

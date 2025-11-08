@@ -1,0 +1,18 @@
+[tool]
+name = "cursor"
+description = "AI code editor configuration"
+dependencies = ["brew"]
+
+[[link]]
+target = "~/.config/cursor"
+
+[[link]]
+target = "~/Library/Application Support/Cursor/User"
+files = [
+  { source = "config/settings.json", target = "settings.json" },
+  { source = "config/keybindings.json", target = "keybindings.json" }
+]
+
+[scripts]
+directory = "scripts"
+scripts = ["install_extensions.sh"]

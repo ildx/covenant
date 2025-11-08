@@ -1,0 +1,7 @@
+[tool]
+name = "lazygit"
+description = "Terminal UI for git"
+dependencies = ["brew"]
+
+[[link]]
+target = "~/.config/lazygit"

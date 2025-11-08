@@ -45,7 +45,7 @@
 	email = illein.dev@gmail.com
 
 [includeIf "gitdir/i:~/Development/personal/"]
-	path = ~/.config/git/profiles/.personal
+	path = ~/.config/git/profiles/personal
 
 [includeIf "gitdir/i:~/Development/work/"]
-	path = ~/.config/git/profiles/.uppis
+	path = ~/.config/git/profiles/uppis

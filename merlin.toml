@@ -1,0 +1,59 @@
+# Merlin Configuration for Covenant Dotfiles
+# Root configuration - global settings and profiles only
+
+[metadata]
+name = "covenant"
+version = "1.0.0"
+description = "Personal dotfiles managed by Merlin"
+
+# ============================================================================
+# Settings
+# ============================================================================
+
+[settings]
+auto_link = false                # Don't auto-link, let user control it
+confirm_before_install = false   # Don't ask for confirmation
+conflict_strategy = "backup"     # Backup existing files before creating symlinks
+
+# ============================================================================
+# Pre-install - System Requirements (installed FIRST, before anything else)
+# ============================================================================
+
+[preinstall]
+tools = [
+  "xcode",                 # Xcode Command Line Tools
+  "brew",                  # Homebrew package manager
+  "mas",                   # Mac App Store CLI
+  "git",                   # Git version control
+  "zsh"                    # Z shell
+]
+
+# ============================================================================
+# Profiles
+# ============================================================================
+
+[[profile]]
+name = "full"
+default = true
+description = "Full setup with all tools"
+tools = [
+  "cursor",
+  "eza",
+  "ghostty",
+  "karabiner",
+  "lazygit",
+  "misc",
+  "mise",
+  "zellij"
+]
+
+# [[profile]]
+# name = "minimal"
+# description = "Minimal setup - just essentials"
+# tools = ["git", "zsh", "brew"]
+
+# [[profile]]
+# name = "work"
+# hostname = "Work-MacBook"
+# description = "Work machine setup"
+# tools = ["git", "zsh", "brew", "cursor", "mise"]

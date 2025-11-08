@@ -1,0 +1,7 @@
+[tool]
+name = "mise"
+description = "Runtime version manager"
+dependencies = ["brew"]
+
+[[link]]
+target = "~/.config/mise"

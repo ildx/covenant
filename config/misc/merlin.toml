@@ -1,0 +1,8 @@
+[tool]
+name = "misc"
+description = "Miscellaneous configuration files"
+dependencies = []
+
+[[link]]
+source = "config/.hushlogin"
+target = "~/.hushlogin"
