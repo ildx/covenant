@@ -73,7 +73,7 @@ target = "{home_dir}/<file>"
 [[link]]
 target = "{home_dir}/Library/Application Support/<App>/User"
 files = [
-  { source = "config/file.json", target = "file.json" }
+  { source = "config/<file>", target = "<file>" }
 ]
 
 # Directory to directory
