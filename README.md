@@ -2,6 +2,8 @@
 
 Personal dotfiles for macOS, structured for Merlin (TBA).
 
+<img width="1456" height="816" alt="image" src="https://github.com/user-attachments/assets/88a435cb-2ddf-4709-bb99-d6a41871a2a9" />
+
 ## Structure
 
 ```
