@@ -66,20 +66,20 @@ target = "{config_dir}/tool"
 
 # File (explicit)
 [[link]]
-source = "config/.zshrc"
-target = "{home_dir}/.zshrc"
+source = "config/<file>"
+target = "{home_dir}/<file>"
 
 # Multiple files
 [[link]]
-target = "{home_dir}/Library/Application Support/App/User"
+target = "{home_dir}/Library/Application Support/<App>/User"
 files = [
   { source = "config/file.json", target = "file.json" }
 ]
 
 # Directory to directory
 [[link]]
-source = "config/themes"
-target = "/Applications/App.app/Resources/themes"
+source = "config/<directory>"
+target = "/Applications/<App>.app/Resources/<directory>"
 ```
 
 ## Tools
