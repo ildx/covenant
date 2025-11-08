@@ -5,7 +5,7 @@ dependencies = []
 
 [[link]]
 source = "config/.zshrc"
-target = "~/.zshrc"
+target = "{home_dir}/.zshrc"
 
 [[link]]
-target = "~/.config/zsh"
+target = "{config_dir}/zsh"

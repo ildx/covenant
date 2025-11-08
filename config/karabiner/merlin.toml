@@ -4,7 +4,7 @@ description = "Keyboard customizer"
 dependencies = ["brew", "yq", "jq"]
 
 [[link]]
-target = "~/.config/karabiner"
+target = "{config_dir}/karabiner"
 
 [scripts]
 directory = "scripts"

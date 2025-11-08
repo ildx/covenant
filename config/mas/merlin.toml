@@ -4,4 +4,4 @@ description = "Mac App Store CLI"
 dependencies = []
 
 [[link]]
-target = "~/.config/mas"
+target = "{config_dir}/mas"

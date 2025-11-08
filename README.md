@@ -24,6 +24,7 @@ covenant/
 - System requirements (preinstall)
 - Profiles per machine/use case
 - Global settings
+- Default directory variables (`home_dir`, `config_dir`)
 
 ### Tool
 
@@ -41,21 +42,36 @@ covenant/
 **`config/<tool>/*.toml`** *(optional)*
 - Tool-specific data (e.g., `brew.toml`, `profiles.toml`)
 
+## Variables
+
+Paths use variables that Merlin expands at runtime:
+
+```toml
+# Root merlin.toml defines defaults
+[settings]
+home_dir = "~"
+config_dir = "{home_dir}/.config"
+```
+
+Variables can reference other variables. Merlin can override these at runtime when the user specifies a custom directory.
+
 ## Link Patterns
+
+All links use `source` + `target` keys with variable support:
 
 ```toml
 # Directory (implicit source = "config/")
 [[link]]
-target = "~/.config/tool"
+target = "{config_dir}/tool"
 
 # File (explicit)
 [[link]]
 source = "config/.zshrc"
-target = "~/.zshrc"
+target = "{home_dir}/.zshrc"
 
 # Multiple files
 [[link]]
-target = "~/base/path"
+target = "{home_dir}/Library/Application Support/App/User"
 files = [
   { source = "config/file.json", target = "file.json" }
 ]
@@ -63,7 +79,7 @@ files = [
 # Directory to directory
 [[link]]
 source = "config/themes"
-target = "~/themes"
+target = "/Applications/App.app/Resources/themes"
 ```
 
 ## Tools

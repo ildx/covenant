@@ -5,4 +5,4 @@ dependencies = []
 
 [[link]]
 source = "config/.hushlogin"
-target = "~/.hushlogin"
+target = "{home_dir}/.hushlogin"

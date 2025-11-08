@@ -4,8 +4,8 @@ description = "Git version control configuration"
 dependencies = []
 
 [[link]]
-target = "~/.config/git"
+target = "{config_dir}/git"
 
 [[link]]
 source = "config/.gitconfig"
-target = "~/.gitconfig"
+target = "{home_dir}/.gitconfig"

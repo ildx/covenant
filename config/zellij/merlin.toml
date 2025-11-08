@@ -4,7 +4,7 @@ description = "Terminal multiplexer"
 dependencies = ["brew"]
 
 [[link]]
-target = "~/.config/zellij"
+target = "{config_dir}/zellij"
 
 [scripts]
 directory = "scripts"

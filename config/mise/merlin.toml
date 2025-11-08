@@ -4,4 +4,4 @@ description = "Runtime version manager"
 dependencies = ["brew"]
 
 [[link]]
-target = "~/.config/mise"
+target = "{config_dir}/mise"

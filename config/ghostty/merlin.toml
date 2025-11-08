@@ -4,7 +4,7 @@ description = "Terminal emulator"
 dependencies = ["brew"]
 
 [[link]]
-target = "~/.config/ghostty"
+target = "{config_dir}/ghostty"
 
 [[link]]
 source = "config/themes"

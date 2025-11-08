@@ -4,10 +4,10 @@ description = "AI code editor configuration"
 dependencies = ["brew"]
 
 [[link]]
-target = "~/.config/cursor"
+target = "{config_dir}/cursor"
 
 [[link]]
-target = "~/Library/Application Support/Cursor/User"
+target = "{home_dir}/Library/Application Support/Cursor/User"
 files = [
   { source = "config/settings.json", target = "settings.json" },
   { source = "config/keybindings.json", target = "keybindings.json" }

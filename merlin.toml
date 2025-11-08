@@ -15,6 +15,10 @@ auto_link = false                # Don't auto-link, let user control it
 confirm_before_install = false   # Don't ask for confirmation
 conflict_strategy = "backup"     # Backup existing files before creating symlinks
 
+# Default directory variables (can be overridden by Merlin at runtime)
+home_dir = "~"
+config_dir = "{home_dir}/.config"
+
 # ============================================================================
 # Pre-install - System Requirements (installed FIRST, before anything else)
 # ============================================================================
