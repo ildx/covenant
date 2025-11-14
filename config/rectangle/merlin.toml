@@ -1,0 +1,7 @@
+[tool]
+name = "rectangle"
+description = "Window manager"
+dependencies = ["brew"]
+
+[[link]]
+target = "{config_dir}/rectangle"
