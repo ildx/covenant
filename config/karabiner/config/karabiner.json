@@ -37,6 +37,29 @@
                         ]
                     },
                     {
+                        "description": "Profiles",
+                        "manipulators": [
+                            {
+                                "description": "Hyper+1: Switch to Apple profile",
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
+                                },
+                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Hyper+2: Switch to Satechi profile",
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
+                                },
+                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Window Management",
                         "manipulators": [
                             {
@@ -99,26 +122,6 @@
                     }
                 ]
             },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 834,
-                        "vendor_id": 1452
-                    },
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": []
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 666,
-                        "vendor_id": 76
-                    },
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": []
-                }
-            ],
             "name": "Apple (XM3/Internal)",
             "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
@@ -155,6 +158,29 @@
                                     "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Raycast'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Profiles",
+                        "manipulators": [
+                            {
+                                "description": "Hyper+1: Switch to Apple profile",
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
+                                },
+                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Hyper+2: Switch to Satechi profile",
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
+                                },
+                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'" }],
                                 "type": "basic"
                             }
                         ]
