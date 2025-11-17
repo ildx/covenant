@@ -1,271 +1,315 @@
 {
-    "profiles": [
+  "profiles": [
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Hyperkey (Caps Lock to Hyper)",
+            "manipulators": [
+              {
+                "description": "Hyperkey",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Raycast Launcher",
+            "manipulators": [
+              {
+                "description": "Raycast",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Raycast'" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Profiles",
+            "manipulators": [
+              {
+                "description": "Hyper+1: Switch to Apple profile",
+                "from": {
+                  "key_code": "1",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+2: Switch to Satechi profile",
+                "from": {
+                  "key_code": "2",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Window Management",
+            "manipulators": [
+              {
+                "description": "Hyper+Left arrow: Left half",
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_option", "left_control"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right arrow: Right half",
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_option", "left_control"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Enter: Maximize",
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "return_or_enter",
+                    "modifiers": ["left_option", "left_control"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right shift: Next display",
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_control", "left_option", "left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Apple (XM3/Internal)",
+      "selected": true,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+    },
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Hyperkey (Caps Lock to Hyper)",
+            "manipulators": [
+              {
+                "description": "Hyperkey",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Raycast Launcher",
+            "manipulators": [
+              {
+                "description": "Raycast",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Raycast'" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Profiles",
+            "manipulators": [
+              {
+                "description": "Hyper+1: Switch to Apple profile",
+                "from": {
+                  "key_code": "1",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+2: Switch to Satechi profile",
+                "from": {
+                  "key_code": "2",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Window Management",
+            "manipulators": [
+              {
+                "description": "Hyper+Left arrow: Left half",
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_shift", "left_control"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right arrow: Right half",
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_shift", "left_control"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Enter: Maximize",
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "return_or_enter",
+                    "modifiers": ["left_option", "left_command"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Hyper+Right shift: Next display",
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "mandatory": ["command", "control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_control", "left_option", "left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
         {
-            "complex_modifications": {
-                "rules": [
-                    {
-                        "description": "Hyperkey (Caps Lock to Hyper)",
-                        "manipulators": [
-                            {
-                                "description": "Hyperkey",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Raycast Launcher",
-                        "manipulators": [
-                            {
-                                "description": "Raycast",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Raycast'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Profiles",
-                        "manipulators": [
-                            {
-                                "description": "Hyper+1: Switch to Apple profile",
-                                "from": {
-                                    "key_code": "1",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+2: Switch to Satechi profile",
-                                "from": {
-                                    "key_code": "2",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Window Management",
-                        "manipulators": [
-                            {
-                                "description": "Hyper+Left arrow: Left half",
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_option", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+Right arrow: Right half",
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_option", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+Enter: Maximize",
-                                "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter",
-                                        "modifiers": ["left_option", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+Right shift: Next display",
-                                "from": {
-                                    "key_code": "right_shift",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_control", "left_option", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "name": "Apple (XM3/Internal)",
-            "selected": true,
-            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
-        },
-        {
-            "complex_modifications": {
-                "rules": [
-                    {
-                        "description": "Hyperkey (Caps Lock to Hyper)",
-                        "manipulators": [
-                            {
-                                "description": "Hyperkey",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Raycast Launcher",
-                        "manipulators": [
-                            {
-                                "description": "Raycast",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Raycast'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Profiles",
-                        "manipulators": [
-                            {
-                                "description": "Hyper+1: Switch to Apple profile",
-                                "from": {
-                                    "key_code": "1",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+2: Switch to Satechi profile",
-                                "from": {
-                                    "key_code": "2",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [{ "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Window Management",
-                        "manipulators": [
-                            {
-                                "description": "Hyper+Left arrow: Left half",
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_shift", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+Right arrow: Right half",
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_shift", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+Enter: Maximize",
-                                "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter",
-                                        "modifiers": ["left_option", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Hyper+Right shift: Next display",
-                                "from": {
-                                    "key_code": "right_shift",
-                                    "modifiers": { "mandatory": ["command", "control", "option", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_control", "left_option", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "devices": [
-                {
-                    "fn_function_keys": [
-                        {
-                            "from": { "key_code": "f3" },
-                            "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
-                        }
-                    ],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 1,
-                        "vendor_id": 1014
-                    },
-                    "ignore_vendor_events": true
-                }
-            ],
-            "name": "Satechi (X1)",
-            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+          "fn_function_keys": [
+            {
+              "from": { "key_code": "f3" },
+              "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
+            }
+          ],
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 1,
+            "vendor_id": 1014
+          },
+          "ignore_vendor_events": true
         }
-    ]
+      ],
+      "name": "Satechi (X1)",
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+    }
+  ]
 }
