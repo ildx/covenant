@@ -39,6 +39,12 @@ category = "cli"
 dependencies = []
 
 [[brew]]
+name = "docker"
+description = "Container platform"
+category = "development"
+dependencies = []
+
+[[brew]]
 name = "git-delta"
 description = "Better git diff viewer"
 category = "development"
@@ -57,26 +63,20 @@ category = "development"
 dependencies = []
 
 [[brew]]
-name = "docker"
-description = "Container platform"
-category = "development"
-dependencies = []
-
-[[brew]]
 name = "mise"
 description = "Runtime version manager"
 category = "development"
 dependencies = []
 
 [[brew]]
-name = "zellij"
-description = "Terminal multiplexer"
+name = "jandedobbeleer/oh-my-posh/oh-my-posh"
+description = "Prompt theme engine"
 category = "shell"
 dependencies = []
 
 [[brew]]
-name = "jandedobbeleer/oh-my-posh/oh-my-posh"
-description = "Prompt theme engine"
+name = "zellij"
+description = "Terminal multiplexer"
 category = "shell"
 dependencies = []
 
@@ -97,20 +97,8 @@ category = "security"
 dependencies = []
 
 [[cask]]
-name = "1password-cli"
-description = "1Password CLI"
-category = "security"
-dependencies = ["1password"]
-
-[[cask]]
 name = "cursor"
 description = "AI code editor"
-category = "development"
-dependencies = []
-
-[[cask]]
-name = "visual-studio-code"
-description = "Code editor"
 category = "development"
 dependencies = []
 
@@ -133,15 +121,15 @@ category = "development"
 dependencies = []
 
 [[cask]]
-name = "yaak"
-description = "API client"
+name = "visual-studio-code"
+description = "Code editor"
 category = "development"
 dependencies = []
 
 [[cask]]
-name = "figma"
-description = "Design tool"
-category = "design"
+name = "yaak"
+description = "API client"
+category = "development"
 dependencies = []
 
 [[cask]]
@@ -151,15 +139,9 @@ category = "design"
 dependencies = []
 
 [[cask]]
-name = "raycast"
-description = "Spotlight replacement"
-category = "productivity"
-dependencies = []
-
-[[cask]]
-name = "rectangle"
-description = "Window manager"
-category = "productivity"
+name = "figma"
+description = "Design tool"
+category = "design"
 dependencies = []
 
 [[cask]]
@@ -171,6 +153,18 @@ dependencies = []
 [[cask]]
 name = "notion"
 description = "Note-taking and collaboration"
+category = "productivity"
+dependencies = []
+
+[[cask]]
+name = "raycast"
+description = "Spotlight replacement"
+category = "productivity"
+dependencies = []
+
+[[cask]]
+name = "rectangle"
+description = "Window manager"
 category = "productivity"
 dependencies = []
 
@@ -187,14 +181,14 @@ category = "browser"
 dependencies = []
 
 [[cask]]
-name = "karabiner-elements"
-description = "Keyboard customizer"
+name = "aldente"
+description = "Battery charge limiter"
 category = "system"
 dependencies = []
 
 [[cask]]
-name = "jordanbaird-ice"
-description = "Menu bar manager"
+name = "backblaze"
+description = "Cloud backup service"
 category = "system"
 dependencies = []
 
@@ -205,15 +199,21 @@ category = "system"
 dependencies = []
 
 [[cask]]
-name = "aldente"
-description = "Battery charge limiter"
+name = "jordanbaird-ice"
+description = "Menu bar manager"
 category = "system"
 dependencies = []
 
 [[cask]]
-name = "backblaze"
-description = "Cloud backup service"
+name = "karabiner-elements"
+description = "Keyboard customizer"
 category = "system"
+dependencies = []
+
+[[cask]]
+name = "discord"
+description = "Other communication"
+category = "communication"
 dependencies = []
 
 [[cask]]
