@@ -1,0 +1,7 @@
+[tool]
+name = "oh-my-posh"
+description = "The most customizable and fastest prompt engine for any shell."
+dependencies = ["brew", "zsh"]
+
+[[link]]
+target = "{config_dir}/oh-my-posh"
