@@ -6,8 +6,9 @@
 # - dark:catppuccin-frappe,light:catppuccin-latte
 # - dark:nord,light:il-nord
 # - dark:github-dark-default,light:gitlab-light
+# - dark:Catppuccin Frappe,light:Seoulbones Light
 
-theme = dark:Pnevma,light:Seoulbones Light
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
 
 # ============================================================================
 # Icon
@@ -25,10 +26,12 @@ window-padding-x = 30
 # ============================================================================
 # Text & Cursor
 # ============================================================================
+cursor-color = #89dceb
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 font-size = 15
+font-family = "JetBrainsMono Nerd Font Mono"
 
 # ============================================================================
 # Keybindings - Split Navigation (Vim-style)
