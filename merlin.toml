@@ -42,12 +42,15 @@ default = true
 description = "Full setup with all tools"
 tools = [
   "cursor",
+  "dark-notify",
   "eza",
   "ghostty",
   "karabiner",
   "lazygit",
   "misc",
   "mise",
+  "oh-my-posh",
+  "rectangle",
   "zellij"
 ]
 

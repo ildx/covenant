@@ -15,6 +15,12 @@ category = "cli"
 dependencies = []
 
 [[brew]]
+name = "cormacrelf/tap/dark-notify"
+description = "Detect when macOS switches appearance"
+category = "cli"
+dependencies = []
+
+[[brew]]
 name = "eza"
 description = "Modern ls replacement"
 category = "cli"
@@ -169,9 +175,15 @@ category = "productivity"
 dependencies = []
 
 [[cask]]
+name = "helium-browser"
+description = "Helium"
+category = "browser"
+dependencies = []
+
+[[cask]]
 name = "zen"
 description = "Zen Browser"
-category = "productivity"
+category = "browser"
 dependencies = []
 
 [[cask]]

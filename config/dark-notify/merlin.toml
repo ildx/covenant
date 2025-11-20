@@ -1,0 +1,11 @@
+[tool]
+name = "dark-notify"
+description = "Automatic theme switcher for macOS"
+dependencies = ["brew"]
+
+[[link]]
+target = "{config_dir}/dark-notify"
+
+[scripts]
+directory = "scripts"
+scripts = ["setup.sh"]
