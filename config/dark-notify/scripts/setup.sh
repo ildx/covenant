@@ -5,7 +5,8 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-AGENTS_DIR="${SCRIPT_DIR}/agents"
+CONFIG_DIR="$(dirname "$SCRIPT_DIR")"
+AGENTS_DIR="${CONFIG_DIR}/config/agents"
 TEMPLATE_FILE="${AGENTS_DIR}/local.dark-notify.plist.template"
 OUTPUT_FILE="${AGENTS_DIR}/local.dark-notify.plist"
 LAUNCH_AGENTS_DIR="${HOME}/Library/LaunchAgents"

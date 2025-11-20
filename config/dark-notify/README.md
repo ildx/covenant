@@ -7,7 +7,7 @@ This setup automatically switches themes for eza and zellij when macOS appearanc
 - `scripts/setup.sh` - Setup script that generates and installs the LaunchAgent
 - `scripts/start.sh` - Main entry point that sets initial theme and starts dark-notify
 - `scripts/notify.sh` - Called by dark-notify when appearance changes, updates all themes
-- `agents/local.dark-notify.plist.template` - Template for LaunchAgent plist (used by setup script)
+- `config/agents/local.dark-notify.plist.template` - Template for LaunchAgent plist (used by setup script)
 
 ## Initial Setup
 
@@ -19,7 +19,7 @@ cd ~/.config/dark-notify/scripts
 ```
 
 This will:
-1. Generate `agents/local.dark-notify.plist` from the template with your home directory
+1. Generate `config/agents/local.dark-notify.plist` from the template with your home directory
 2. Copy it to `~/Library/LaunchAgents/`
 3. Load the LaunchAgent so it starts running
 
