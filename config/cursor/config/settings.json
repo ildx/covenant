@@ -16,9 +16,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "workbench.colorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Cursor Light",
   "workbench.iconTheme": "catppuccin noctis icons",
-  "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Cursor Dark Midnight",
+  "workbench.preferredLightColorTheme": "Cursor Light",
   "workbench.settings.editor": "json"
 }
