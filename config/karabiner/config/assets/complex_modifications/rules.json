@@ -1,8 +1,7 @@
 {
-  "title": "Shared",
   "rules": [
     {
-      "description": "Hyperkey (Caps Lock to Hyper)",
+      "description": "Hyperkey (Caps Lock)",
       "manipulators": [
         {
           "description": "Hyperkey",
@@ -21,7 +20,7 @@
       ]
     },
     {
-      "description": "Raycast Launcher",
+      "description": "Raycast",
       "manipulators": [
         {
           "description": "Raycast",
@@ -32,6 +31,41 @@
             }
           },
           "to": [{ "shell_command": "open -a 'Raycast'" }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Profiles",
+      "manipulators": [
+        {
+          "description": "Hyper+1: Switch to Apple profile",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": ["command", "control", "option", "shift"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (MK3/Internal)'"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "description": "Hyper+2: Switch to Satechi profile",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": ["command", "control", "option", "shift"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Satechi (X1)'"
+            }
+          ],
           "type": "basic"
         }
       ]
@@ -50,7 +84,7 @@
           "to": [
             {
               "key_code": "left_arrow",
-              "modifiers": ["left_shift", "left_control"]
+              "modifiers": ["left_option", "left_control"]
             }
           ],
           "type": "basic"
@@ -66,7 +100,7 @@
           "to": [
             {
               "key_code": "right_arrow",
-              "modifiers": ["left_shift", "left_control"]
+              "modifiers": ["left_option", "left_control"]
             }
           ],
           "type": "basic"
@@ -82,7 +116,7 @@
           "to": [
             {
               "key_code": "return_or_enter",
-              "modifiers": ["left_option", "left_command"]
+              "modifiers": ["left_option", "left_control"]
             }
           ],
           "type": "basic"
@@ -105,24 +139,5 @@
         }
       ]
     }
-  ],
-  "devices": [
-    {
-      "ignore_vendor_events": true,
-      "identifiers": {
-        "is_keyboard": true,
-        "product_id": 1,
-        "vendor_id": 1014
-      },
-      "fn_function_keys": [
-        {
-          "from": { "key_code": "f3" },
-          "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
-        }
-      ]
-    }
-  ],
-  "virtual_hid_keyboard": {
-    "keyboard_type_v2": "ansi"
-  }
+  ]
 }

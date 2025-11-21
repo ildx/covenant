@@ -1,11 +1,7 @@
 [tool]
 name = "karabiner"
 description = "Keyboard customizer"
-dependencies = ["brew", "yq", "jq"]
+dependencies = ["brew", "jq"]
 
 [[link]]
 target = "{config_dir}/karabiner"
-
-[scripts]
-directory = "scripts"
-scripts = ["generate_config.sh"]

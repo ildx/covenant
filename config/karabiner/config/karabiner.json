@@ -4,18 +4,26 @@
       "complex_modifications": {
         "rules": [
           {
-            "description": "Hyperkey (Caps Lock to Hyper)",
+            "description": "Hyperkey (Caps Lock)",
             "manipulators": [
               {
                 "description": "Hyperkey",
                 "from": {
                   "key_code": "caps_lock",
-                  "modifiers": { "optional": ["any"] }
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
                 },
                 "to": [
                   {
                     "key_code": "left_shift",
-                    "modifiers": ["left_command", "left_control", "left_option"]
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -23,17 +31,26 @@
             ]
           },
           {
-            "description": "Raycast Launcher",
+            "description": "Raycast",
             "manipulators": [
               {
                 "description": "Raycast",
                 "from": {
                   "key_code": "spacebar",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
-                "to": [{ "shell_command": "open -a 'Raycast'" }],
+                "to": [
+                  {
+                    "shell_command": "open -a 'Raycast'"
+                  }
+                ],
                 "type": "basic"
               }
             ]
@@ -46,12 +63,17 @@
                 "from": {
                   "key_code": "1",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
-                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'"
+                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (MK3/Internal)'"
                   }
                 ],
                 "type": "basic"
@@ -61,7 +83,12 @@
                 "from": {
                   "key_code": "2",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
@@ -81,13 +108,21 @@
                 "from": {
                   "key_code": "left_arrow",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "left_arrow",
-                    "modifiers": ["left_option", "left_control"]
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -97,13 +132,21 @@
                 "from": {
                   "key_code": "right_arrow",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "right_arrow",
-                    "modifiers": ["left_option", "left_control"]
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -113,13 +156,21 @@
                 "from": {
                   "key_code": "return_or_enter",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "return_or_enter",
-                    "modifiers": ["left_option", "left_control"]
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -129,13 +180,22 @@
                 "from": {
                   "key_code": "right_shift",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "right_arrow",
-                    "modifiers": ["left_control", "left_option", "left_command"]
+                    "modifiers": [
+                      "left_control",
+                      "left_option",
+                      "left_command"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -144,26 +204,36 @@
           }
         ]
       },
-      "name": "Apple (XM3/Internal)",
+      "name": "Apple (MK3/Internal)",
       "selected": true,
-      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      }
     },
     {
       "complex_modifications": {
         "rules": [
           {
-            "description": "Hyperkey (Caps Lock to Hyper)",
+            "description": "Hyperkey (Caps Lock)",
             "manipulators": [
               {
                 "description": "Hyperkey",
                 "from": {
                   "key_code": "caps_lock",
-                  "modifiers": { "optional": ["any"] }
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
                 },
                 "to": [
                   {
                     "key_code": "left_shift",
-                    "modifiers": ["left_command", "left_control", "left_option"]
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -171,17 +241,26 @@
             ]
           },
           {
-            "description": "Raycast Launcher",
+            "description": "Raycast",
             "manipulators": [
               {
                 "description": "Raycast",
                 "from": {
                   "key_code": "spacebar",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
-                "to": [{ "shell_command": "open -a 'Raycast'" }],
+                "to": [
+                  {
+                    "shell_command": "open -a 'Raycast'"
+                  }
+                ],
                 "type": "basic"
               }
             ]
@@ -194,12 +273,17 @@
                 "from": {
                   "key_code": "1",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
-                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (XM3/Internal)'"
+                    "shell_command": "/Library/Application\\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile 'Apple (MK3/Internal)'"
                   }
                 ],
                 "type": "basic"
@@ -209,7 +293,12 @@
                 "from": {
                   "key_code": "2",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
@@ -229,13 +318,21 @@
                 "from": {
                   "key_code": "left_arrow",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "left_arrow",
-                    "modifiers": ["left_shift", "left_control"]
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -245,13 +342,21 @@
                 "from": {
                   "key_code": "right_arrow",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "right_arrow",
-                    "modifiers": ["left_shift", "left_control"]
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -261,13 +366,21 @@
                 "from": {
                   "key_code": "return_or_enter",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "return_or_enter",
-                    "modifiers": ["left_option", "left_command"]
+                    "modifiers": [
+                      "left_option",
+                      "left_control"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -277,13 +390,22 @@
                 "from": {
                   "key_code": "right_shift",
                   "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
+                    "mandatory": [
+                      "command",
+                      "control",
+                      "option",
+                      "shift"
+                    ]
                   }
                 },
                 "to": [
                   {
                     "key_code": "right_arrow",
-                    "modifiers": ["left_control", "left_option", "left_command"]
+                    "modifiers": [
+                      "left_control",
+                      "left_option",
+                      "left_command"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -296,8 +418,14 @@
         {
           "fn_function_keys": [
             {
-              "from": { "key_code": "f3" },
-              "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
+              "from": {
+                "key_code": "f3"
+              },
+              "to": [
+                {
+                  "apple_vendor_keyboard_key_code": "mission_control"
+                }
+              ]
             }
           ],
           "identifiers": {
@@ -309,7 +437,9 @@
         }
       ],
       "name": "Satechi (X1)",
-      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      }
     }
   ]
 }
